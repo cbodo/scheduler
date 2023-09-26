@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+ <VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cbodo.schedule.controller.CustomerScheduleController">
+     <HBox alignment="CENTER_LEFT">
+         <Label fx:id="customerLabel">
+             <font>
+                 <Font name="SansSerif Bold" size="16.0" />
+             </font>
+         </Label>
+         <padding>
+             <Insets bottom="10.0" top="10.0" />
+         </padding>
+     </HBox>
+     <TableView fx:id="scheduleTableView" prefHeight="400.0">
+         <columns>
+             <TableColumn fx:id="appointmentIdColumn" prefWidth="35.0" text="ID" />
+             <TableColumn fx:id="titleColumn" prefWidth="120.0" text="Title" />
+             <TableColumn fx:id="descriptionColumn" prefWidth="120.0" text="Description" />
+             <TableColumn fx:id="locationColumn" prefWidth="120.0" text="Location" />
+             <TableColumn fx:id="typeColumn" prefWidth="120.0" text="Type" />
+             <TableColumn fx:id="startColumn" prefWidth="150.0" text="Start" />
+             <TableColumn fx:id="endColumn" prefWidth="150.0" text="End" />
+             <TableColumn fx:id="contactIdColumn" prefWidth="75.0" text="Contact" />
+             <TableColumn fx:id="customerIdColumn" prefWidth="75.0" text="Customer" />
+             <TableColumn fx:id="userIdColumn" prefWidth="75.0" text="User ID" />
+         </columns>
+     </TableView>
+   <VBox alignment="CENTER_RIGHT">
+       <Button fx:id="closeButton" onAction="#close" mnemonicParsing="false" prefWidth="80.0" text="Close" />
+   </VBox>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+ </VBox>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cbodo.schedule.controller.ReportsController">
+   <VBox>
+      <Label text="Total Number of Appointments by Month and Type">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="reportTextArea" prefWidth="900.0">
+         <font>
+            <Font name="Monospaced Regular" size="13.0" />
+         </font>
+      </TextArea>
+      <Separator prefWidth="200.0" />
+      <Label text="Average Appointment Length for Each Customer">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="durationTextArea" prefWidth="900.0">
+         <font>
+            <Font name="Monospaced Regular" size="13.0" />
+         </font>
+      </TextArea>
+   </VBox>
+</AnchorPane>

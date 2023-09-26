@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cbodo.schedule.controller.WeekViewController">
+   <children>
+      <VBox minHeight="-Infinity" minWidth="-Infinity">
+         <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity">
+            <Label fx:id="scheduleLabel">
+               <font>
+                  <Font name="SansSerif Bold" size="16.0" />
+               </font></Label>
+            <VBox.margin>
+               <Insets bottom="10.0" top="10.0" />
+            </VBox.margin>
+         </HBox>
+         <TableView fx:id="appointmentTableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0">
+            <columns>
+               <TableColumn fx:id="appointmentIdColumn" minWidth="35.0" prefWidth="-1.0" text="ID" />
+               <TableColumn fx:id="titleColumn" minWidth="120.0" prefWidth="-1.0" text="Title" />
+               <TableColumn fx:id="descriptionColumn" minWidth="120.0" prefWidth="-1.0" text="Description" />
+               <TableColumn fx:id="locationColumn" minWidth="120.0" prefWidth="-1.0" text="Location" />
+               <TableColumn fx:id="typeColumn" minWidth="120.0" prefWidth="-1.0" text="Type" />
+               <TableColumn fx:id="startColumn" minWidth="160.0" prefWidth="-1.0" text="Start" />
+               <TableColumn fx:id="endColumn" minWidth="160.0" prefWidth="-1.0" text="End" />
+               <TableColumn fx:id="contactIdColumn" minWidth="60.0" prefWidth="-1.0" text="Contact" />
+               <TableColumn fx:id="customerIdColumn" minWidth="60.0" prefWidth="-1.0" text="Customer" />
+               <TableColumn fx:id="userIdColumn" minWidth="60.0" prefWidth="-1.0" text="User ID" />
+            </columns>
+         </TableView>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,6 @@
+module:com.cbodo.schedule
+com.cbodo.schedule
+com.cbodo.schedule.controller
+com.cbodo.schedule.DAO
+com.cbodo.schedule.model
+com.cbodo.schedule.util

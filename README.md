@@ -3,6 +3,7 @@
 ## Author
 
 Craig Bodo
+
 craigmbodo@gmail.com
 
 ## Description
@@ -67,15 +68,19 @@ java -jar schedule.jar
 Once the application begins, you will be prompted to log in. Use either of the following username/password combinations:
 
 username: test
+
 password: test
 
 username: admin
+
 password: admin
 
-## IDE
+## IDE, SDK, and Libraries
 
 IntelliJ IDEA 2023.2 (Community Edition)
+
 JDK 17.0.1
+
 JavaFX-SDK-17.0.6
 
 ## MySQL Connector Driver Version

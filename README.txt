@@ -27,6 +27,8 @@ the current week. The Monthly tab lists all appoints scheduled for the current m
 separate reports for the company's records: Total Number of Appointments by Month and Type, and Average Appoint Length
 for Each Customer. Under the Weekly and Monthly tabs, the user can Add Edit or Delete appointments using the buttons
 below the table. The View All button opens a modal window that displays all appointments within the database.
+Currently, the Weekly/Monthly views only display appointments for the current week/month. Future iterations of this
+project may implement functionality to allow a user to choose specific weeks/months or a custom range.
 
 The Customer table shows a list of the company's customers. The View Schedule allows the user to see all appointments
 in the database for the selected customer. The user can Add, Edit, or Delete customers using the buttons below the
@@ -54,13 +56,15 @@ directory of this repository) in MySQL Workbench, in this order:
 
 Running The Application:
 
-To run the application, type the following into the command line:
+Open the project in IntelliJ IDEA. Build the project using the Scheduler configuration.
+
+Now you can either run the program in IntelliJ IDEA or by typing the following into the command line:
+
 ```bash
 cd scheduler/out/artifacts/schedule_jar
 java -jar schedule.jar
 ```
-Once the application begins, you will be prompted to log in.
-You can use either of the following username/password combinations:
+Once the application begins, you will be prompted to log in. Use either of the following username/password combinations:
 
 username: test
 password: test
@@ -69,7 +73,8 @@ username: admin
 password: admin
 
 ## IDE
-IntelliJ Community 2021.2.3
+
+IntelliJ IDEA 2023.2 (Community Edition)
 JDK 17.0.1
 JavaFX-SDK-17.0.6
 

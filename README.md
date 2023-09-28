@@ -45,35 +45,34 @@ Additionally, the program logs all login attempts in a text file named 'login_ac
 
 Since this program is not hosted on any server, running it on your local machine will require some setting up.
 
-Setting Up:
+### Setting Up The Database:
 
-- Open a MySQL connection on 'localhost:3306'.
-- Create a database named 'client_schedule'. NOTE: You may need to update the username and password located on lines 37
+1. Open a MySQL connection on 'localhost:3306'.
+2. Create a database named 'client_schedule'. NOTE: You may need to update the username and password located on lines 37
 and 41 in 'src/main/java/com/cbodo/schedule/util/JDBC.java', if your MySQL username and password do not match.
-- Create the database tables and populate with example data. Open and run the following scripts (located in the root
-directory of this repository) in MySQL Workbench, in this order:
-    'client_schedule_db_dml.sql'
-    'client_schedule_db_ddl.sql'
+3. Run the scripts in MySQL Workbench to create the tables and populate with example data, in the following order:
+    >'client_schedule_db_dml.sql'
 
-Running The Application:
+    >'client_schedule_db_ddl.sql'
 
-Open the project in IntelliJ IDEA. Build the project using the Scheduler configuration.
+### Running The Application:
 
-Now you can either run the program in IntelliJ IDEA or by typing the following into the command line:
+Enter the following into the command line:
 
 ```bash
-cd scheduler/out/artifacts/schedule_jar
-java -jar schedule.jar
+cd scheduler/out/artifacts/scheduler_jar
+java -jar scheduler.jar
 ```
-Once the application begins, you will be prompted to log in. Use either of the following username/password combinations:
 
-username: test
+### Using the Application
 
-password: test
+Once the application loads, you will be prompted to log in. Use either of the following username/password combinations:
 
-username: admin
+>**username:** *test*\
+>**password:** *test*
 
-password: admin
+>**username:** *admin*\
+>**password:** *admin*
 
 ## IDE, SDK, and Libraries
 

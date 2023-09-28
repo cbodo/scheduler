@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Scheduler" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.cbodo.schedule.Main" />
+    <option name="MAIN_CLASS_NAME" value="com.cbodo.schedule.Launcher" />
     <module name="scheduler" />
     <extension name="coverage">
       <pattern>
